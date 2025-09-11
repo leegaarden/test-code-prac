@@ -34,5 +34,7 @@ class UserRepositoryTest {
     // Then
     assertThat(savedUser.getId()).isNotNull();
     assertThat(savedUser.getName()).isEqualTo("홍길동");
+
+    System.out.println("저장된 사용자: " + savedUser.getName()); // 로그로 확인
   }
 }
